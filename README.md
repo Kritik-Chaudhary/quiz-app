@@ -1,6 +1,3 @@
-Here’s a rewritten, concise, and attractive README for your quiz app, highlighting only the most important information and including a link to your GitHub Pages site:
-
----
 
 # Interactive Quiz App
 
