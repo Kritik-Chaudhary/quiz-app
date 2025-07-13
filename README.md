@@ -238,7 +238,7 @@ This project is open source and available under the MIT License.
 
 If you encounter any issues or have questions:
 
-1. Check the [Issues](https://github.com/yourusername/interactive-quiz-app/issues) page
+1. Check the [Issues](https://github.com/Kritik-Chaudhary/quiz-app/issues) page
 2. Create a new issue with detailed description
 3. Include browser information and steps to reproduce
 
