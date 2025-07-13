@@ -1,7 +1,7 @@
 # Interactive Quiz Application
 
 A modern, responsive web-based quiz application built with vanilla HTML, CSS, and JavaScript. Test your knowledge across various topics including science, history, geography, and general knowledge.
-
+Click here to try](https://kritik-chaudhary.github.io/quiz-app/) 
 ## Features
 
 - **15 Diverse Questions** - Covering science, history, geography, and general knowledge
