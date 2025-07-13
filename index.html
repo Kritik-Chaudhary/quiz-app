@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <!-- Quiz Header -->
+        <div class="quiz-header">
+            <h1 class="quiz-title">Interactive Quiz</h1>
+            <p class="quiz-subtitle">Test your knowledge across various topics</p>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+
+        <!-- Start Screen -->
+        <div id="startScreen" class="start-screen">
+            <h2 class="start-title">Welcome to the Interactive Quiz!</h2>
+            <p class="start-description">
+                Challenge yourself with questions covering science, history, geography, and general knowledge. 
+                Each question has a time limit, and you'll receive instant feedback on your answers.
+            </p>
+            <div class="quiz-info">
+                <div class="quiz-info-item">
+                    <span>Total Questions:</span>
+                    <span id="totalQuestions">15</span>
+                </div>
+                <div class="quiz-info-item">
+                    <span>Time per Question:</span>
+                    <span>30 seconds</span>
+                </div>
+                <div class="quiz-info-item">
+                    <span>Scoring:</span>
+                    <span>10 points per correct answer</span>
+                </div>
+            </div>
+            <button class="btn" onclick="startQuiz()">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Content -->
+        <div id="quizContent" class="quiz-content" style="display: none;">
+            <div class="question-container" id="questionContainer">
+                <div class="question-header">
+                    <div class="question-counter" id="questionCounter">Question 1 of 15</div>
+                    <div class="timer" id="timer">30s</div>
+                </div>
+                <div class="question-text" id="questionText"></div>
+                <div class="answers-container" id="answersContainer"></div>
+                <div class="feedback" id="feedback"></div>
+                <div class="navigation-buttons">
+                    <button class="btn" id="nextBtn" onclick="nextQuestion()" disabled>Next Question</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="resultsScreen" class="results-container">
+            <div class="score-display" id="finalScore">0/15</div>
+            <div class="score-text" id="scoreText">You scored 0 out of 15 questions correctly</div>
+            <div class="performance-message" id="performanceMessage"></div>
+            <button class="btn" onclick="restartQuiz()">Take Quiz Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
